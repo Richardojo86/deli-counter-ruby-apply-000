@@ -13,9 +13,10 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, name)
-  katz_deli.push(name)
-  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
+def take_a_number(katz_deli)
+  @@deli_count = 1
+  katz_deli << @@deli_count
+  puts "Welcome, You are number is  #{@@deli_count} in #{katz_deli}."
 end
 
 def now_serving(katz_deli)
